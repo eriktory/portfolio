@@ -10,7 +10,7 @@
 }
 
 body {
-    background: var(--primary-color);
+    background: red;
     display: grid;
     place-items: center;
     overflow: hidden;
