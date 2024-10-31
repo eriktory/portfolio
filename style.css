@@ -2,14 +2,17 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
-
-body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
+body {
+    background: #dde1e7;
+    display: grid;
+    place-items: center;
+}
+
 .main {
-    background: red;
+    background: rgb(0, 4, 255);
     margin: 80px auto;
     width: 90%;
     height: 400px;
