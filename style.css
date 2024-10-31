@@ -10,7 +10,6 @@
 }
 
 body {
-    background: red;
     display: grid;
     place-items: center;
     overflow: hidden;
@@ -29,7 +28,7 @@ body {
     
 }
 
-@media (max-width: 600px){
+@media (max-width: 650px){
     .content{
         grid-template-columns: 1fr;
         gap: 10px;
@@ -46,7 +45,7 @@ body {
 
 .perfil{
     border-radius: 13px;
-    background: linear-gradient(315deg,   #cacaca, #f0f0f0, );
+    background: linear-gradient(315deg, #cacaca, #f0f0f0);
     box-shadow: -10px -5px 20px #b1b1b1,
                 inset -5px -5px 5px #b1b1b1,
                  11px 11px 22px #ffffff;
@@ -56,7 +55,7 @@ body {
     border: 1.5px solid #ffffff73;
     border-radius: 13px;
     background: #e0e0e0;
-    background: linear-gradient(315deg,  #cacaca, #f0f0f0);
+    background: linear-gradient(315deg, #cacaca, #f0f0f0);
     box-shadow: -10px -5px 20px #b1b1b1, 
                 inset 11px 11px 22px #ffffff,
                 inset -5px -5px 5px #b1b1b1,
