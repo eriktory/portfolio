@@ -3,33 +3,33 @@
     padding: 0;
     box-sizing: border-box;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    --primary-color: #F0F0F3;
+    --primary-color: #e8e8e8;
     --shadow-ligth: #FFFFFF;
     --shadow-dark: rgba(174, 174, 192, 0.4);
 
 }
 
 body {
+    background: var(--primary-color);
     display: grid;
     place-items: center;
     overflow: hidden;
 }
 
-.content {
+main {
     margin: 25px auto;
     width: 95%;
     height: 95vh;
     max-width: 1000px;
     min-width: 250px;
-    
     display: grid;
-    grid-template-columns: 250px auto;
+    grid-template-columns: 275px auto;
     gap: 20px;
     
 }
 
 @media (max-width: 650px){
-    .content{
+    main{
         grid-template-columns: 1fr;
         gap: 10px;
     }
@@ -44,20 +44,50 @@ body {
 }
 
 .perfil{
-    border-radius: 13px;
-    background: linear-gradient(315deg, #cacaca, #f0f0f0);
-    box-shadow: -10px -5px 20px #b1b1b1,
-                inset -5px -5px 5px #b1b1b1,
-                 11px 11px 22px #ffffff;
-}
-
-.skill{
     border: 1.5px solid #ffffff73;
     border-radius: 13px;
     background: #e0e0e0;
-    background: linear-gradient(315deg, #cacaca, #f0f0f0);
+    background: linear-gradient(315deg,  #cacaca, #f0f0f0);
     box-shadow: -10px -5px 20px #b1b1b1, 
                 inset 11px 11px 22px #ffffff,
                 inset -5px -5px 5px #b1b1b1,
                 11px 11px 22px #ffffff;
+    
 }
+
+.perfil span {
+    font-size: 2rem;
+    font-weight: bolder;
+    text-decoration-line: underline;
+    text-decoration-skip-ink: none;
+    text-underline-offset: 10px;
+}
+
+.perfil ul {
+    margin-top: 30px;
+    font-size: 0.8rem;
+    font-style: italic;
+    text-align:left;
+    
+    li {
+        margin-top: 12px;
+        list-style-type:none;
+    }
+}
+
+
+.skill{
+    z-index: 2;
+    background: linear-gradient(150deg,  rgba(190, 189, 189, 0.5), #f0f0f0);
+    border-radius: 13px;
+    box-shadow: rgba(50, 50, 93, 0.2) 0px 25px 50px -10px,
+    rgba(0, 0, 0, 0.25) 0px 10px 30px -15px,
+    rgba(10, 37, 64, 0.26) 0px -2px 6px 0px inset;
+    backdrop-filter: blur(8px);
+}
+
+.skill span{
+    display: block;
+    margin-bottom: 25px;
+}
+
